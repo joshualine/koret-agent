@@ -12,3 +12,18 @@ router.post("/property", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//Delete a property initially added
+router.delete("/:id", async (req, res) => {
+  try {
+    const property = await Property.findById(req.params.id);
+    if (property.userId === req.body.userId) {
+      await property.deleteOne();
+      res.status(200).json("the property has been removed from the database");
+    } else {
+      res.status(403).json("you can delete only the property you added");
+    }
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
