@@ -16,3 +16,9 @@ Users can rent their desired apartments and house/property ownwers can also rent
 
 ## progress level
 # 30%
+
+
+
+    Reference and functionality
+    Guides and tutorials
+    Examples and use cases
