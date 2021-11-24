@@ -3,7 +3,7 @@ const Property = require("../models/Property");
 const User = require("../models/User");
 
 //Add a property for rent
-router.post("/property", async (req, res) => {
+router.post("/", async (req, res) => {
   const newProperty = new Property(req.body);
   try {
     const savedProperty = await newProperty.save();
@@ -27,3 +27,6 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
+module.exports = router;
