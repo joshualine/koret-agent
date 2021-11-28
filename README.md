@@ -15,10 +15,5 @@ Users can rent their desired apartments and house/property ownwers can also rent
     Remove a property: DELETE /api/users/:userId/property/:propertyId
 
 ## progress level
-# 30%
+ 80%
 
-
-
-    Reference and functionality
-    Guides and tutorials
-    Examples and use cases
